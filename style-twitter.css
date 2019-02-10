@@ -1,0 +1,315 @@
+html {
+    font-size: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.mainPage {
+    display: grid;
+    grid-template-columns: repeat(28, 1fr);
+    grid-template-rows: repeat(28, 1fr);
+    width: 100%;
+    height: 100vh;
+}
+
+.rightSide {
+    grid-column: 15/29;
+    grid-row: 1/28;
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 2rem;
+    margin-left: 4.25rem;
+    margin-right: 4.25rem;
+    flex-wrap: nowrap;
+}
+
+.logInButton {
+    background-color: #fff;
+    border:0.1rem solid rgb(29, 161, 242);
+    border-radius: 999.9rem;
+    cursor:pointer;
+    min-width: 6.279rem;
+    font-size: 1.5rem;
+    color: rgb(29, 161, 242);
+    padding: 1.2rem;
+    font-weight: 700;
+    transform: 2000ms;
+}
+
+.logInButton:hover {
+    background: #ddf2ff;
+}
+
+.rightSide span {
+    display: block;
+    text-align: center;
+    padding-bottom: 17rem;
+    margin: 0.4rem 4.25rem 0 4.25rem;
+}
+
+.rightSide a {
+    font-size: 1.4rem;
+    text-decoration: none;
+    color: #a4b3c1;
+    padding-left: 28rem;
+}
+
+.rightSide a:hover {
+    text-decoration: underline;
+}
+
+.registerField {
+    font-size: 1.5rem;
+    color: #6a7784;
+    text-decoration-color:#6a7784;
+    padding:1rem;
+    border: 0.1rem solid rgb(204, 214, 221);
+    line-height: 1.96875rem;
+    width: 18rem;
+}
+
+.marginForm {
+    margin-right: 1.2rem;
+}
+
+.mainContent {
+    align-self: center;
+    max-width: 38rem;
+}
+
+.mainContent h2 {
+    margin-top: 1.5rem;
+    color: rgb(20, 23, 26);
+    font-size: 3rem;
+    font-weight: 800;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", sans-serif;
+    line-height: 3.9375rem;
+}
+
+.mainContent h1 {
+    margin: 5.9rem 0 1.5rem 0;
+    color: rgb(20, 23, 26);
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.registerButton {
+    background-color: rgb(29, 161, 242);
+    border:0.1rem solid rgb(29, 161, 242);
+    border-radius: 999.9rem;
+    cursor:pointer;
+    min-width: 6.279rem;
+    font-size: 1.5rem;
+    color: #fff;
+    padding: 1.2rem;
+    font-weight: 700;
+    transform: 2000ms;
+}
+
+.buttonWidth {
+    width: 34.8rem;
+    height: 4.2rem;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.registerButton:hover {
+    background: #0084d6;
+}
+
+aside {
+    grid-column: 1/15;
+    grid-row: 1/28;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #1DA1F2 url("img/twitterAside.png") no-repeat fixed left; 
+    background-size: 90%;
+}
+
+aside img {
+    margin-right: 1rem;
+    margin-top: 0.5rem;
+}
+
+.asideContent {
+    width: 38rem;
+    height: 17rem;
+    padding: 1.5rem 0;
+    
+}
+
+aside p {
+    color: #fff;
+    font-size: 1.9rem;
+    font-weight: bold;
+    text-decoration-color: #fff;
+    line-height: 3rem;
+    margin-left: 1.5rem;
+    padding: 1.7rem 0;
+}
+
+.mainContent {
+
+    background: #fff;
+}
+
+footer {
+    grid-column: 1/29;
+    grid-row: 28/29;
+    display: flex;
+    justify-content: center;
+    background: #fff;
+    border-top: 0.1rem solid #e6ecf0;
+    padding: 1.1rem 0;
+}
+
+footer a, footer p {
+    color: rgb(101, 119, 134);
+    text-decoration-color: rgb(101, 119, 134);
+    text-decoration: none;
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+
+footer a:hover, footer p:hover {
+    text-decoration: underline;
+}
+
+footer li {
+    display: inline-block;
+    padding: 0 0.9rem 0 0.9rem;
+}
+
+@media (max-width: 1580px) {
+    .rightSide a {
+        padding-left: 15rem;
+    }
+} 
+
+@media (max-width: 1520px) {
+    .rightSide a {
+        padding-left: 16rem;
+    }
+
+    nav {
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+
+}
+
+@media (max-width: 1390px) {
+    .rightSide a {
+        padding-left: 11rem;
+    }
+    nav {
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+}
+
+@media (max-width: 1190px) {
+    nav {
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+    }
+
+    .registerField {
+        font-size: 1.3rem;
+        padding:0.6rem;
+        line-height: 1.5rem;
+        width: 14rem;
+    }
+}
+
+@media (max-width: 1100px) {
+    nav {
+        margin-left: -1rem;
+        margin-right: -1rem;
+}
+
+@media (max-width: 1020px) {
+    nav {
+        display: none;
+    }
+    .rightSide a {
+        display: none;
+    }
+    .mainContent {
+        margin-top: 7.7rem;
+    }
+}
+
+@media (max-width: 800px) {
+        .mainPage {
+            display: flex;
+            flex-direction: column;
+            height: auto;
+            margin-left: 0.5rem;
+
+        }
+        .rightSide span {
+            display:none;
+        }
+
+        .mainContent {
+            margin-top: 0;
+        }
+
+        .rightside {
+            order: 1;
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+        }
+        aside {
+            order: 2;
+            padding: 2rem;
+        }
+
+        aside p{
+            padding: 0.5rem 0;
+        }
+
+        footer {
+            order: 3;
+            bottom: 0;
+            text-align: center;
+        }
+
+        footer a, footer p{   
+            margin-top: 0.5rem;
+            margin-bottom: 0.5rem;
+            padding-right: 1.4rem;
+        }
+
+        .bottom-nav {
+            flex-wrap: wrap;
+        }
+
+        .mainContent h2 {
+            font-size: 2.5rem;
+            text-align: center;
+        }
+
+    }
+
+    @media (max-width: 400px) {
+        .mainContent {
+            margin: 0 auto;
+        }
+.registerButton {
+    width: 90%;   
+    }
+
+    .logInButton {
+        width: 90%;   
+        }
+
+}
